@@ -5,7 +5,125 @@ body {
 }
 
 .app {
-    background: rgba($color: #000000, $alpha: 0.8);
-    color: #fff;
+    font-family: "Inter";
     height: 100vh;
+
+    header {
+        text-align: center;
+        padding-top: 5vh;
+        font-weight: 700;
+        position: relative;
+
+        .menu-btn {
+            cursor: pointer;
+            border: 0;
+            width: 20px;
+            height: 10px;
+            background-size: contain;
+            background: url("./images/menu.svg") no-repeat;
+            position: absolute;
+            right: 20px;
+
+            @media (min-width: 576px) {
+                display: none;
+            }
+        }
+
+        .share {
+            padding-right: 100px;
+            display: none;
+            text-align: right;
+            cursor: pointer;
+
+            .tooltiptext {
+                position: relative;
+                visibility: hidden;
+                width: 70px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding: 5px 10px;
+                font-size: 12px;
+                border-radius: 5px;
+                z-index: 1;
+                left: -70px;
+                top: 10px;
+                box-shadow: -5px 5px 6px -3px rgba(0, 0, 0, 0.37);
+            }
+
+            &:hover {
+                .tooltiptext {
+                    visibility: visible;
+                }
+            }
+
+            @media(min-width: 576px) {
+                display: block;
+            }
+        }
+
+
+        #profile_img {
+            width: 88px;
+            height: 88px;
+            margin: auto;
+            border-radius: 100px;
+            background: url("./images/profile-img.png");
+            background-size: contain;
+
+            &:hover {
+                background: url("./images/profile-img-alt.png");
+            }
+        }
+
+        #slack {
+            display: none;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80vw;
+        gap: 10px;
+        margin: 10vh auto;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #EAECF0;
+            padding: 24px 32px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: #D0D5DD;
+            }
+        }
+    }
+
+    .sub-links {
+        text-align: center;
+        margin: 5vh auto;
+    }
+
+    footer {
+        margin: 10vh auto;
+        border-top: 1px solid #e2e2e2;
+        padding: 5vw 5vh;
+
+        .footer-text {
+            color: #667085;
+            font-size: 16px;
+        }
+
+        @media (min-width: 576px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }
