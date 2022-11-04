@@ -1,9 +1,11 @@
-import "./App.scss"
 import zuri from "./images/zuri-logo.svg"
 import i4g from "./images/i4g-logo.svg"
 import slack from "./images/slack.svg"
 import github from './images/github.svg'
 import share from "./images/share.svg"
+import "./App.scss"
+import { Link } from "react-router-dom"
+
 
 const App = () => {
     return (
@@ -26,6 +28,7 @@ const App = () => {
                 <a className="btn" href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" id="book__python">Python Books</a>
                 <a className="btn" href="https://background.zuri.team" id="pitch">Background Check for Coders</a>
                 <a className="btn" href="https://books.zuri.team/design-rules" id="book__design">Design Books</a>
+                <Link className="btn" to={`/contact`} id="contact">Contact</Link>
             </div>
             <div className="sub-links">
                 <img src={slack} alt="slack" />
