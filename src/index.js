@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import Contact from './pages/contact';
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "HNGi9-Linktree-clone/",
         element: <App />
