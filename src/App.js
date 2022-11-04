@@ -3,10 +3,21 @@ import i4g from "./images/i4g-logo.svg"
 import slack from "./images/slack.svg"
 import github from './images/github.svg'
 import share from "./images/share.svg"
+import styled from "styled-components"
 import "./App.scss"
-import { Link } from "react-router-dom"
 
+const Button = styled.a`
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    background-color: #EAECF0;
+    padding: 24px 32px;
+    border-radius: 10px;
 
+    &:hover {
+        background-color: #D0D5DD;
+    }
+`
 const App = () => {
     return (
         <div className='app'>
@@ -23,12 +34,12 @@ const App = () => {
             </header>
 
             <div className="links">
-                <a className="btn" href="https://training.zuri.team/" id="btn_zuri">Zuri Team</a>
-                <a className="btn" href="http://books.zuri.team " id="books">Zuri Books</a>
-                <a className="btn" href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" id="book__python">Python Books</a>
-                <a className="btn" href="https://background.zuri.team" id="pitch">Background Check for Coders</a>
-                <a className="btn" href="https://books.zuri.team/design-rules" id="book__design">Design Books</a>
-                <Link className="btn" to={`/contact`} id="contact">Contact</Link>
+                <Button href="https://training.zuri.team/" id="btn_zuri">Zuri Team</Button>
+                <Button href="http://books.zuri.team " id="books">Zuri Books</Button>
+                <Button href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" id="book__python">Python Books</Button>
+                <Button href="https://background.zuri.team" id="pitch">Background Check for Coders</Button>
+                <Button href="https://books.zuri.team/design-rules" id="book__design">Design Books</Button>
+                <Button href="/contact" id="contact">Contact</Button>
             </div>
             <div className="sub-links">
                 <img src={slack} alt="slack" />
