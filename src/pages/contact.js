@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./contact.scss"
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -83,7 +84,7 @@ export default function Contact() {
                         name="isChecked"
                         id="check"
                         onChange={handleChange}
-                    />You agree to providing your data to  who may contact you.</label>
+                    />You agree to providing your data to Meekilo  who may contact you.</label>
                 <button type="submit" id="btn_submit">Send Message</button>
             </form>
         </div>

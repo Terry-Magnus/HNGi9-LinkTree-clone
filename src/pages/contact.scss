@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     margin: 0 15px;
+    font-family: "Inter";
 
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
     label {
         display: block;
@@ -21,14 +27,37 @@
         }
     }
 
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 3px 2px;
+        width: 100%;
+        font-size: 0.8 rem;
+
+        &:focus {
+            border: 1px solid #84caff;
+            outline: #d1e9ff;
+            border-radius: 5px;
+        }
+    }
 
     #message {
         border: 1px solid #84caff;
         outline: #d1e9ff;
 
+
+
         &:focus {
             box-shadow: 0 1px 2px rgb(16 24 40 / 5%),
                 0 0 0 4px #d1e9ff;
+        }
+    }
+
+    #message.err {
+        border: 1px solid #f89687;
+
+        &:focus {
+            box-shadow: 0 1px 2px rgb(16 24 40 / 5%), 0 0 0 4px #ffd3cc;
         }
     }
 
@@ -37,14 +66,6 @@
         font-size: 0.8rem;
     }
 
-    .err {
-        border: 1px solid #f89687;
-
-        &:focus {
-            filter: drop-shadow(0px 0px 4px#FFD3CC,
-                    0 1px 2px #101828 5%);
-        }
-    }
 
     #btn_submit {
         margin-top: 10px;
