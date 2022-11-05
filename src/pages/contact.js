@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "./contact.scss"
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -33,7 +32,6 @@ export default function Contact() {
         <div className="contact">
             <h1>Contact Me</h1>
             <p>Hi there, contact me to ask me about anything you have in mind.</p>
-            <pre>{JSON.stringify(formData, undefined, 2)}</pre>
             <form onSubmit={handleSubmit} >
                 <div className="input-group">
                     <div className="input">
@@ -67,23 +65,25 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required />
-                <p className="error"></p>
                 <label htmlFor="message">Message:</label>
                 <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
+                    cols={10}
+                    className={errorMsg === "" ? "" : "err"}
                     placeholder="Send me a message and I'll reply you as soon as possible..."
                 />
-                <p>{errorMsg}</p>
-                <input
-                    type="checkbox"
-                    name="isChecked"
-                    id="check"
-                    onChange={handleChange}
-                />
-                <label htmlFor="check">You agree to providing your data to  who may contact you.</label>
+                <p className="errormsg">{errorMsg}</p>
+
+                <label htmlFor="check" className="checkbox">
+                    <input
+                        type="checkbox"
+                        name="isChecked"
+                        id="check"
+                        onChange={handleChange}
+                    />You agree to providing your data to  who may contact you.</label>
                 <button type="submit" id="btn_submit">Send Message</button>
             </form>
         </div>
