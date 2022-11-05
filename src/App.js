@@ -39,7 +39,7 @@ const App = () => {
                 <Button href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" id="book__python">Python Books</Button>
                 <Button href="https://background.zuri.team" id="pitch">Background Check for Coders</Button>
                 <Button href="https://books.zuri.team/design-rules" id="book__design">Design Books</Button>
-                <Button href="/contact" id="contact">Contact Me</Button>
+                <Button href="HNGi9-LinkTree-clone/contact" id="contact">Contact Me</Button>
             </div>
             <div className="sub-links">
                 <img src={slack} alt="slack" />
