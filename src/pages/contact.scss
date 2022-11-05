@@ -1,0 +1,36 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.8em;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+
+        @media(min-width: 576px) {
+            flex-direction: row;
+        }
+    }
+
+
+    #btn_submit {
+        margin-top: 10px;
+    }
+
+    @media(min-width: 576px) {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+}
