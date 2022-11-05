@@ -21,20 +21,15 @@
         }
     }
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        padding: 3px 2px;
-        width: 100%;
-    }
 
     #message {
-        border-radius: 5px;
+        border: 1px solid #84caff;
+        outline: #d1e9ff;
 
         &:focus {
-            filter: drop-shadow(0 0 0 4px);
+            box-shadow: 0 1px 2px rgb(16 24 40 / 5%),
+                0 0 0 4px #d1e9ff;
         }
-
     }
 
     .errormsg {
@@ -43,10 +38,11 @@
     }
 
     .err {
-        border: 1px solid red;
+        border: 1px solid #f89687;
 
         &:focus {
-            filter: drop-shadow(0 0 0 4px red);
+            filter: drop-shadow(0px 0px 4px#FFD3CC,
+                    0 1px 2px #101828 5%);
         }
     }
 
@@ -72,7 +68,6 @@
             background: #B2DDFF;
         }
     }
-
 
 
     @media(min-width: 576px) {

@@ -9,11 +9,11 @@ import {
 
 const router = createBrowserRouter([
     {
-        path: "HNGi9-LinkTree-clone",
+        path: "/",
         element: <App />
     },
     {
-        path: "HNGi9-LinkTree-clone/contact",
+        path: "/contact",
         element: <Contact />
     }
 ]);
