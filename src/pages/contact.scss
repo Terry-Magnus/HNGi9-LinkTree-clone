@@ -42,10 +42,7 @@
     }
 
     #message {
-        border: 1px solid #84caff;
-        outline: #d1e9ff;
-
-
+        border-radius: 5px;
 
         &:focus {
             box-shadow: 0 1px 2px rgb(16 24 40 / 5%),

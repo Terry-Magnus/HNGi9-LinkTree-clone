@@ -4,7 +4,7 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-    <BrowserRouter basename='/HNGi9-LinkTree-clone'>
+    <BrowserRouter>
         <React.StrictMode>
             <App />
         </React.StrictMode>
