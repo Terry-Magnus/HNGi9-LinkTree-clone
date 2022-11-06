@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HNGi9-LinkTree-clone/static/css/main.9e6ad56b.css",
-    "main.js": "/HNGi9-LinkTree-clone/static/js/main.8a27290b.js",
+    "main.js": "/HNGi9-LinkTree-clone/static/js/main.7be378db.js",
     "static/media/i4g-logo.svg": "/HNGi9-LinkTree-clone/static/media/i4g-logo.601ff0479d970c740e8b7d7ba7821548.svg",
     "static/media/profile-img.png": "/HNGi9-LinkTree-clone/static/media/profile-img.5ff40e1b5d2b90077f44.png",
     "static/media/profile-img-alt.png": "/HNGi9-LinkTree-clone/static/media/profile-img-alt.3f377eb0bf1991ca86da.png",
@@ -12,10 +12,10 @@
     "index.html": "/HNGi9-LinkTree-clone/index.html",
     "static/media/share.svg": "/HNGi9-LinkTree-clone/static/media/share.e3f81b496e21f13d54272e5772ace63b.svg",
     "main.9e6ad56b.css.map": "/HNGi9-LinkTree-clone/static/css/main.9e6ad56b.css.map",
-    "main.8a27290b.js.map": "/HNGi9-LinkTree-clone/static/js/main.8a27290b.js.map"
+    "main.7be378db.js.map": "/HNGi9-LinkTree-clone/static/js/main.7be378db.js.map"
   },
   "entrypoints": [
     "static/css/main.9e6ad56b.css",
-    "static/js/main.8a27290b.js"
+    "static/js/main.7be378db.js"
   ]
 }
