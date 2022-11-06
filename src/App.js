@@ -5,6 +5,8 @@ import github from './images/github.svg'
 import share from "./images/share.svg"
 import styled from "styled-components"
 import "./App.scss"
+import { Route, Routes } from "react-router-dom"
+import Contact from "./pages/contact"
 
 const Button = styled.a`
     text-decoration: none;
@@ -21,6 +23,9 @@ const Button = styled.a`
 const App = () => {
     return (
         <div className='app'>
+            <Routes>
+                <Route path="/contact" element={<Contact />}></Route>
+            </Routes>
             <header>
                 <button className="menu-btn"></button>
                 <div className="share"><img src={share} alt="share" />
@@ -39,7 +44,7 @@ const App = () => {
                 <Button href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" id="book__python">Python Books</Button>
                 <Button href="https://background.zuri.team" id="pitch">Background Check for Coders</Button>
                 <Button href="https://books.zuri.team/design-rules" id="book__design">Design Books</Button>
-                <Button href="HNGi9-LinkTree-clone/contact" id="contact">Contact Me</Button>
+                <Button href="/contact" id="contact">Contact Me</Button>
             </div>
             <div className="sub-links">
                 <img src={slack} alt="slack" />
