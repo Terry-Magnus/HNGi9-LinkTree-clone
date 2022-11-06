@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         element: <App />
     },
     {
-        path: "/contact",
+        path: "HNGi9-LinkTree-clone/contact",
         element: <Contact />
     }
 ]);
