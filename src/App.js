@@ -24,6 +24,7 @@ const App = () => {
     return (
         <div className='app'>
             <Routes>
+                <Route exact path="/" element={<App />}></Route>
                 <Route path="/contact" element={<Contact />}></Route>
             </Routes>
             <header>
