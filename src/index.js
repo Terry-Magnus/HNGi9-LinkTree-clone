@@ -9,7 +9,7 @@ import {
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/HNGi9-LinkTree-clone",
         element: <App />
     },
     {
