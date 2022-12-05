@@ -1,15 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import App from './App';
-import { HashRouter } from "react-router-dom";
+import Contact from './pages/contact'
+import {
+    createHashRouter,
+    RouterProvider,
+} from "react-router-dom";
 
-ReactDOM.render(
+const router = createHashRouter([
+    {
+        path: "/",
+        element: <App />,
+    },
+    {
+        path: "/contact",
+        element: <Contact />
+    }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <HashRouter>
-            <App />
-        </HashRouter>
-    </React.StrictMode>,
-    document.getElementById('root')
+        <RouterProvider router={router} />
+    </React.StrictMode>
 );
-
 

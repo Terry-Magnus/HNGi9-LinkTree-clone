@@ -5,8 +5,6 @@ import github from './images/github.svg'
 import share from "./images/share.svg"
 import styled from "styled-components"
 import "./App.scss"
-import { Route, Routes } from "react-router-dom"
-import Contact from "./pages/contact"
 
 const Button = styled.a`
     text-decoration: none;
@@ -23,10 +21,6 @@ const Button = styled.a`
 const App = () => {
     return (
         <div className='app'>
-            <Routes>
-                <Route exact path="/" element={<App />}></Route>
-                <Route path="/contact" element={<Contact />}></Route>
-            </Routes>
             <header>
                 <button className="menu-btn"></button>
                 <div className="share"><img src={share} alt="share" />
